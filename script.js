@@ -61,6 +61,9 @@ console.log(gravity, boilingPoint, PI);
 // third line
 
 */
+
+/*
+// let, const and Data types
 // Let
 let age = 20; // declaring a variable
 // console.log(age);
@@ -171,3 +174,154 @@ console.log(typeof (2 > 4)); // booloean
 
 // control structure
 // if () {}
+
+*/
+
+// Operators
+// 1. Arithmetic Operator
+let a = 10;
+let b = 5;
+let c = a + b;
+console.log(c);
+
+const sellingPrice = 700;
+const costPrice = 500;
+const profitValue = sellingPrice - costPrice;
+console.log(profitValue);
+
+// calculating the area of a circle
+// Pi * radius * radius
+const PI = 3.14;
+let radius = 100;
+const areaOfCircle = PI * radius * radius;
+console.log(areaOfCircle);
+
+console.log(c, profitValue, areaOfCircle);
+
+let x = 5;
+let y = 3;
+let z = 10;
+console.log(z / x);
+console.log(x % y);
+console.log(z % x);
+
+// String Concatenation
+let word = "Hello World";
+let word_1 = "Hello";
+let word_2 = "World";
+console.log(word);
+console.log(word_1 + " " + word_2);
+
+let firstName = "John";
+let lastName = "Doe";
+let fullName = firstName + " " + lastName;
+console.log(fullName);
+
+console.log("My " + "name is" + " " + fullName + ".");
+
+// 2. Assignment Operator
+let d = 2 + 5 + 8 - 2;
+// console.log("First: ", d); // 13
+
+d += 10; // d = d(13) + 10
+// console.log("Second: ", d); // 23
+
+d -= 5; // d = d(23) - 5
+// console.log("Third: ", d);
+
+let e = 3;
+// console.log(e);
+
+e = e + 2; // e += 2
+// console.log(e);
+
+let f = 10;
+// console.log(f);
+
+// f = f + 20;
+f += 20;
+// console.log(f);
+
+let g = 2;
+// console.log(g);
+
+// g = g * 10;
+g *= 10;
+// console.log(g);
+
+// 3.  Comparison Operators
+const ageAdult = 18;
+let ageJohn = 20;
+let ageBisi = 22;
+let ageBoolean = ageJohn < ageBisi; // true
+// console.log(ageBoolean);
+
+// console.log(ageJohn >= ageAdult); // 18 is inclusive
+// console.log(ageJohn > 18);
+
+ageBisi = 18;
+// console.log(ageBisi <= 18); // true
+
+// == (2)
+// === (3)
+
+// let q = 3;
+// let p = "3";
+
+// console.log(3 == "3"); // loose equality  true
+// console.log(q === p); // strict equality  false
+
+// loose equality
+// console.log(10 == 10); // true
+// console.log(10 === 10); // true
+
+// console.log(2 == 3); // false
+// console.log(0 == 0); // true
+// console.log(0 == false); // true
+// console.log(0 == ""); // true
+// console.log(1 == true); // true
+
+// console.log("Hello" == "World"); // false
+// console.log("Hello" == "Hello"); // true
+// console.log(2 == "2"); // true
+
+// strict equality
+// console.log(10 === 10); // true
+// console.log(2 === 3); // false
+// console.log("Hello" === "World"); // false
+// console.log("Hello" === "Hello"); // true
+// console.log(2 === "2"); // false
+// console.log(0 === 0);
+// console.log(0 === false);
+// console.log(0 === ""); // false
+// console.log(1 === true); // false
+
+// not equal to
+// != loose not equal to
+// console.log(2 != 3);
+// console.log("Hello" != "World");
+// console.log(2 != "2");
+// console.log(1 != true); // false
+
+// !== strict not equal to
+// console.log(2 !== 3);
+// console.log("Hello" !== "World");
+// console.log(2 !== "2"); // true
+// console.log(1 !== true); // true
+
+// function ordinary(val) {
+//   if (0 === "") {
+//     // true
+//     console.log("This is real!");
+//   }
+// }
+// ordinary();
+
+// we use ! for the opposite
+console.log(!(3 > 4));
+
+console.log(word_1);
+console.log(word_1.length);
+
+console.log("I am Sherif");
+console.log("I am Sherif".length);
