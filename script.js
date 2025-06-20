@@ -177,6 +177,7 @@ console.log(typeof (2 > 4)); // booloean
 
 */
 
+/*
 // Operators
 // 1. Arithmetic Operator
 let a = 10;
@@ -262,9 +263,10 @@ let ageBoolean = ageJohn < ageBisi; // true
 ageBisi = 18;
 // console.log(ageBisi <= 18); // true
 
+// equality
 // == (2)
 // === (3)
-
+// ! NOT
 // let q = 3;
 // let p = "3";
 
@@ -325,3 +327,107 @@ console.log(word_1.length);
 
 console.log("I am Sherif");
 console.log("I am Sherif".length);
+*/
+
+/*
+// 4. Logical Operator
+// && AND  ampersand
+// || OR   pipe
+// !  NOT  exclamation
+
+// comparison operator  &&  comparison operator
+
+// && AND
+let personAge_1 = 20;
+let booleanValue = personAge_1 == 18 && personAge_1 > 30;
+
+// true and true  = true
+// false and true = false
+// true and false = false
+// false and false = false
+
+if (booleanValue) {
+  console.log("Old");
+}
+
+//  ||  OR gate
+// let personAge_2 = 30;
+
+if ("hello" == 3 || 10 == 5) {
+  console.log("Old");
+}
+
+if (10 == 1 || 5 == 1) {
+  console.log("YES");
+}
+// true or true = true
+// false or true = true
+// true or false = true
+// false or false = false
+
+//  !  NOT gate
+if (!false) {
+  console.log("YES");
+}
+
+console.log(5 == 5 && !(5 == 5));
+
+// Unary Operator
+// ++ increment
+// post increment & pre increment
+let countInc = 1;
+// count = count + 1;
+
+countInc++; // 2
+console.log(countInc); // 2
+
+++countInc; // + 1 = 3
+console.log(countInc); // 3
+
+// -- decrement
+let countDec = 2;
+// countDec = countDec - 1;
+countDec--;
+// console.log(countDec);
+
+let count = 10;
+count++;
+// count = count + 1
+
+++count; // count = count + 1
+console.log(count); // 11
+
+count--; // count = count - 1
+console.log(count);
+
+// Ternary Operator
+// condition ? val1 : val2
+
+let age = 18;
+
+age < 10 ? console.log("Adult") : console.log("Minor");
+
+// Strings and Template Literals
+const firstName = "Kwame";
+const lastName = "Mensah";
+const country = "Ghana";
+const city = "Kumasi";
+const birthYear = 2005;
+const thisYear = 2025;
+const isMarried = true;
+const job = "footballer";
+
+const aboutKwame = "I am" + " " + firstName + " " + lastName;
+console.log(aboutKwame);
+
+// ${}
+const aboutMensah = `I
+ am ${firstName} ${lastName}, a ${thisYear - birthYear}years old ${job}`;
+console.log(aboutMensah);
+
+console.log(
+  `We can use the 
+  backtick to write any 
+  length of string we want to. yhjkfbsdbcjascbdsgacashcvasjdhaxvz`
+);
+*/
