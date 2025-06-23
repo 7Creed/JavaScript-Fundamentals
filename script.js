@@ -431,3 +431,139 @@ console.log(
   length of string we want to. yhjkfbsdbcjascbdsgacashcvasjdhaxvz`
 );
 */
+
+// Control Structures
+// 1. Conditionals
+// a. if statement
+
+let num = 3;
+
+if (num > 0) {
+  // true
+  console.log(num, "code 1");
+}
+
+// truthy
+// if (" ") {
+//   // truthy
+//   console.log(num + " is a positive number", "code 2");
+// }
+
+// if ({}) {
+//   // truthy   {}  []
+//   console.log(num + " is a positive number", "empty array");
+// }
+
+////// falsy
+
+// if ("") {
+//   // falsy
+//   console.log(num + " is a positive number", "code 2");
+// }
+
+if (false) {
+  console.log(num + " is a positive number", "code 2");
+}
+
+if (0) {
+  // falsy
+  console.log(num + " is a positive number", "code 2");
+}
+
+if (null) {
+  // falsy
+  console.log(num + " is a positive number", "code 2");
+}
+
+if (undefined) {
+  // falsy
+  console.log(num + " is a positive number", "code 2");
+}
+
+// b. if-else statement
+
+let isRaining = true;
+
+if (isRaining) {
+  console.log("Remember to take your coat");
+} else {
+  console.log("You have a nice day!");
+}
+
+const age = 17;
+const isOldEnough = age >= 18;
+
+// if (isOldEnough) {
+//   console.log("You can have a driver's license");
+// } else {
+//   console.log("You are still a Minor");
+// }
+
+// const x = isOldEnough - 18;
+
+if (isOldEnough) {
+  console.log("You can have a driver's license");
+} else {
+  console.log(
+    `You cannot have a driver's license yet. You still have ${
+      18 - age
+    } year(s) left.`
+  );
+}
+
+// const birthYear = 2001;
+// let baby;
+// console.log(baby);
+
+// if (birthYear >= 2008) {
+//   baby = "Gen Z";
+//   console.log(`You are a ${baby} baby`);
+// } else {
+//   baby = "Millennial";
+//   console.log(`You are a ${baby} baby`);
+// }
+
+// console.log(baby);
+
+const birthYear = 2000;
+let baby;
+// console.log(baby); // undefined
+
+if (birthYear >= 2008) {
+  baby = "Gen-Z";
+  console.log(`You are a ${baby} baby`);
+} else {
+  baby = "Millennial";
+  console.log(`You are a ${baby} baby`);
+}
+console.log(baby);
+
+// c. else-if statement
+// let score = prompt("Enter a number: ");
+let score = 67;
+// posible conditions
+// 1. 0 - 39 --> F
+// 2. 40 - 49 --> D
+// 3. 50 - 59 --> C
+// 4. 60 - 69 --> B
+// 5. 70 - 100 --> A
+
+if (score >= 0 && score <= 39) {
+  console.log("Grade: F");
+} else if (score >= 40 && score <= 49) {
+  console.log("Grade D");
+} else if (score >= 50 && score <= 59) {
+  console.log("Grade C");
+} else if (score >= 60 && score <= 69) {
+  console.log("Grade B");
+} else if (score >= 70 && score <= 100) {
+  console.log("Grade A");
+} else {
+  console.log("Invalid input");
+}
+
+// let a = prompt("Enter a number: ");
+// let b = prompt("Enter another number: ");
+
+let c = a * b;
+console.log(c);
