@@ -432,6 +432,7 @@ console.log(
 );
 */
 
+/*
 // Control Structures
 // 1. Conditionals
 // a. if statement
@@ -567,3 +568,96 @@ if (score >= 0 && score <= 39) {
 
 let c = a * b;
 console.log(c);
+*/
+
+/**
+ * Use the BMI example from Challenge #A, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+
+HINT: Use an if/else statement 😉
+ */
+
+/**
+ * 
+ * There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins the a trophy!
+
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score).
+3. Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
+4. Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy.
+TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+ */
+
+let teamDolphins1 = 97;
+let teamDolphins2 = 112;
+let teamDolphins3 = 113;
+
+const aveteamDolphins = (teamDolphins1 + teamDolphins2 + teamDolphins3) / 3;
+
+console.log(aveteamDolphins);
+
+let teamKoalas1 = 109;
+let teamKoalas2 = 95;
+let teamKoalas3 = 123;
+
+const aveTeamKoalas = (teamKoalas1 + teamKoalas2 + teamKoalas3) / 3;
+console.log(aveTeamKoalas);
+
+// T.A > T.B
+// T.B > T.A
+// T.A == T.B
+
+// if (aveteamDolphins > aveTeamKoalas) {
+//   console.log(`Dolphins Win`);
+// }
+
+// if (aveTeamKoalas > aveteamDolphins) {
+//   console.log(`Koalas Win`);
+// }
+
+// if (aveteamDolphins == aveTeamKoalas) {
+//   console.log(`They have the same average score`);
+// }
+
+if (aveteamDolphins > aveTeamKoalas && aveteamDolphins >= 100) {
+  console.log(`Dolphins Win and Dolphin has ${aveteamDolphins}`);
+} else if (aveTeamKoalas > aveteamDolphins && aveTeamKoalas >= 100) {
+  console.log(`Koalas Win and Koala has ${aveTeamKoalas}`);
+} else if (
+  aveteamDolphins == aveTeamKoalas &&
+  aveteamDolphins > 100 &&
+  aveTeamKoalas > 100
+) {
+  console.log(`They both have the same average score`);
+} else {
+  console.log(`No team wins the trophy. Rematch!`);
+}
+
+// Mark's BMI (28.3) is higher than John's (23.9)!
+console.log(
+  `Mark's BMI ${aveteamDolphins} is higher than John's ${aveTeamKoalas}`
+);
+
+// What are the Arithmetic operators: - * + /
+// What are the Comparisons: > < ==(loose) ===(strict) <= >= != !==
+// What are the Logical operators: ||(OR) &&(AND) !(NOT)
+
+let fname = "Jane";
+const age = 20;
+let isStudent = true;
+
+console.log(typeof fname); // string
+console.log(typeof age); // number
+console.log(typeof isStudent); // boolean
+
+let x = "hello";
+let y = 42;
+let z = null;
+let a;
+let isCool = false;
+
+console.log(typeof z); // object
+console.log(typeof a); // undefined
