@@ -591,6 +591,7 @@ TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
  */
 
+/*
 let teamDolphins1 = 97;
 let teamDolphins2 = 112;
 let teamDolphins3 = 113;
@@ -661,3 +662,263 @@ let isCool = false;
 
 console.log(typeof z); // object
 console.log(typeof a); // undefined
+*/
+
+/*
+// let fName = prompt("Enter your name: ");
+
+// if (fName === "Billy" || fName === "Ann") {
+//   console.log("Welcome!");
+// } else {
+//   console.log("Access denied");
+// }
+
+// let fName = prompt("Enter your name: ");
+// let ageInput = prompt("Enter your age");
+// let age = Number(ageInput); //Number()  //.trim()
+
+// if (isNaN(age)) {
+//   console.log(`Please input a valid number`);
+// } else if (age >= 18) {
+//   console.log(`Welcome to the movie site ${fName}`);
+// } else {
+//   console.log(`Not up to the age`);
+// }
+
+// if (age >= 18) {
+//   console.log(`Welcome to the movie site ${fName}`);
+// } else {
+//   console.log(`Not up to the age`);
+// }
+
+// Question 1: Age Comparison
+// Declare a variable myAge and assign it a number.
+// Ask the user for their age using prompt() and compare it with myAge.
+// Output who is older and by how many years.
+// Bonus:
+// Can you detect if the input is not a number?
+// What if someone enters nothing as a name?
+
+// let myAge = 20;
+// let userAge = prompt("Enter you age: ");
+// let userAgeInput = Number(userAge);
+
+// if (isNaN(userAgeInput)) {
+//   // false
+//   console.log("Age must be a number");
+// } else if (myAge > userAgeInput) {
+//   console.log(`i am older than you with ${myAge - userAgeInput}years`);
+// } else if (myAge < userAgeInput) {
+//   console.log(`you are older than I with ${userAgeInput - myAge}years`);
+// } else {
+//   console.log("We are age mates");
+// }
+
+// myAge > userAgeInput
+//   ? console.log(`i am older than you with ${myAge - userAgeInput}years`)
+//   : console.log(`you are older than I with ${userAgeInput - myAge}years`);
+
+// Question 3: Even or Odd Number
+// Ask the user to enter a number.
+// Check if the number is even or odd using the modulus (%) operator.
+// Display the result accordingly.
+// Write a script that checks if a number is even or odd.
+
+// let number = prompt("Enter a number: ");
+
+// if (number % 2 === 0) {
+//   console.log(number + " is an even number");
+// } else {
+//   console.log(number + " is an odd number");
+// }
+
+// Question 4: Determine the Season
+// Create a variable called month and assign it a string value representing a month (e.g., "October").
+// Write a script to determine and display the season based on the month.
+// Seasons:
+// 	•	Autumn: September, October, November
+// 	•	Winter: December, January, February
+// 	•	Spring: March, April, May
+// 	•	Summer: June, July, August
+
+// let month = prompt("Enter a month: ");
+// let capitalOfMonth = month.toLowerCase().trim();
+
+// if (
+//   capitalOfMonth == "december" ||
+//   capitalOfMonth == "january" ||
+//   capitalOfMonth == "febuary"
+// ) {
+//   console.log(`${capitalOfMonth} is in winter`);
+// } else if (
+//   capitalOfMonth == "march" ||
+//   capitalOfMonth == "april" ||
+//   capitalOfMonth == "may"
+// ) {
+//   console.log(`${capitalOfMonth} is in spring`);
+// } else {
+// }
+
+// toUpperCase()
+*/
+
+// Switch Statement
+
+let weather = "Rainy";
+
+//possible cases
+// cloudy
+// rainy
+// windy
+// sunny
+
+switch (weather) {
+  case "cloudy":
+    console.log("It might be cold, take you jacket with you.");
+    break;
+
+  case "rainy":
+    console.log("You need a rain coat.");
+    break;
+
+  case "windy":
+    console.log("It is going to be windy today.");
+    break;
+
+  case "sunny":
+    console.log("It is going to be a hot day.");
+    break;
+
+  default:
+    console.log("Just a normal day!");
+}
+
+let day = "saturday";
+// monday
+// tuesday
+// wednesday
+// thursday
+// friday
+// saturday
+// sunday
+
+switch (day) {
+  case "monday":
+    console.log("Today is " + day.toUpperCase());
+    break;
+
+  case "tuesday":
+    console.log("Today is " + day.toUpperCase());
+    break;
+
+  case "wednesday":
+    console.log("Today is " + day.toUpperCase());
+    break;
+
+  case "thursday":
+    console.log("Today is " + day.toUpperCase());
+    break;
+
+  case "friday":
+    console.log("Today is " + day.toUpperCase());
+    break;
+
+  case "saturday":
+    console.log("Thank God it is weekend");
+    break;
+
+  case "sunday":
+    console.log("Thank God it is weekend");
+    break;
+
+  default:
+    console.log("Input a valid day of the week");
+}
+
+let num = "p";
+// positive
+// negative
+// zero
+
+// switch (true) {
+//   case num > 0:
+//     console.log("Number is a positive number");
+//     break;
+
+//   case num === 0:
+//     console.log("Number is zero");
+//     break;
+
+//   case num < 0:
+//     console.log("Number is a negative number");
+//     break;
+
+//   default:
+//     console.log("Please input a valid number!");
+// }
+
+// == equivalent
+
+// if (num > 0) {
+//   console.log("Number is a positive number");
+// } else if (num === 0) {
+//   console.log("Number is zero");
+// } else if (num < 0) {
+//   console.log("Number is a negative number");
+// } else {
+//   console.log("Please input a valid number!");
+// }
+
+// Ternary
+let isRaining = false;
+
+isRaining ? console.log("It is raining") : console.log("It is NOT raining");
+
+// num > 0
+//   ? console.log("Number is a positive number")
+//   : num === 0
+//   ? console.log("Number is zero")
+//   : num < 0
+//   ? console.log("Number is a negative number")
+//   : console.log("Please input a valid number!");
+
+// LOOPS
+// Print out number 0 - 100 with the console.log() function
+// console.log(0);
+// console.log(1);
+// console.log(2);
+
+// for loop
+// initializiation
+// condition
+// increment / decrement
+
+// increasing
+// for (let i = 0; i <= 100; i++) {
+//   console.log(i);
+// }
+// Print out number 1 - 5 with the console.log() function
+// for (let i = 1; i <= 5; i++) {
+//   console.log(`Number: ${i} 90`);
+// }
+
+// Count down from 10 - 0
+// for (let j = 10; j >= 5; j--) {
+//   console.log(`Number: ${j} `);
+// }
+
+// 0 * 0 = 0
+// 1 * 1 = 1
+// 2 * 2 = 4
+// 3 * 3 = 9
+// 4 * 4 = 16
+// 5 * 5 = 25
+
+// for (let i = 0; i <= 5; i++) {
+//   console.log(`${i} * ${i} = ${i * i}`);
+// }
+
+for (let i = 0; i <= 5; i = i + 2) {
+  console.log(`Number: ${i}`);
+  console.log("Helo a");
+}
