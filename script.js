@@ -762,6 +762,7 @@ console.log(typeof a); // undefined
 // toUpperCase()
 */
 
+/*
 // Switch Statement
 
 let weather = "Rainy";
@@ -922,3 +923,135 @@ for (let i = 0; i <= 5; i = i + 2) {
   console.log(`Number: ${i}`);
   console.log("Helo a");
 }
+*/
+
+// while loop
+// increasing
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// let i = 0;
+// while (i <= 10) {
+//   console.log(i, "Helooooo!");
+//   // step size
+//   i++;
+// }
+
+// let j = 10;
+// while (j > 0) {
+//   console.log(j, "Nah!");
+//   j--;
+// }
+
+// Do while loop
+// increasing
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// let i = 0;
+// do {
+//   console.log(i, "Helooooo!");
+
+//   i = i + 2;
+// } while (i <= 10);
+
+// // the Do-while must run atleast ones.
+
+// Break
+// let random = 9;
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i === random) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// Continue   ... skip
+// for (let j = 0; j <= 10; j++) {
+//   if (j === 6 || j === 8) {
+//     continue;
+//   }
+//   console.log(j);
+// }
+
+// dom
+
+// return (isLoggedIn ? <Dashboard /> : <Login />);
+
+// Write a loop that makes the following pattern using console.log():
+//     #
+//     ##
+//     ###
+//     ####
+//     #####
+//     ######
+//     #######
+
+// let tree = "";
+// for (let i = 1; i <= 10; i++) {
+//   // counter
+//   tree = tree + "#"; // 1 #  tree += "#"
+//   console.log(tree);
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//   // counter
+//   // 1 #  tree += "#"
+//   console.log(i, "tree");
+// }
+
+// Object  - Arrays [ordered] and Objects {}
+
+// Arrays
+
+let fruit1 = "apple";
+let fruit2 = "banana";
+let fruit3 = "orange";
+// console.log(fruit2);
+
+// arrayOfFruits
+let fruit = ["apple", "banana", "orange", "grape", "apple"];
+// 0 - apple
+// 1 - banana
+// 2 - orange
+
+// .length
+
+// console.log(fruit);
+// console.log("Number of fruit", fruit.length);
+// console.log(fruit[0]); // fruit at 1
+// console.log(fruit[1]); // fruit at 2
+// // console.log(fruit[2]);
+// // console.log(fruit[3]);
+// console.log(fruit[4]);
+
+// console.log("Hel   lo".length);
+
+// last element in an array
+// console.log(fruit[fruit.length - 1]);
+// console.log(fruit[fruit.length - 1]);
+
+// Modifying an Array
+console.log(fruit[0]);
+
+fruit[0] = "lemon";
+console.log(fruit);
+console.log(fruit[0]);
+
+fruit[2] = 30;
+console.log(fruit);
+console.log(fruit[2]);
+
+//  arrayOfNums
+// let arrayOfNums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// console.log(arrayOfNums);
+// console.log(arrayOfNums[4]);
+// console.log("Number of integers: ", arrayOfNums.length);
+
+// console.log(arrayOfNums[9]);
+// let lastIndex = arrayOfNums.length - 1;
+// // console.log(lastIndex);
+// console.log(arrayOfNums[lastIndex]);
