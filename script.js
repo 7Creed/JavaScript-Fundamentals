@@ -1003,6 +1003,7 @@ for (let i = 0; i <= 5; i = i + 2) {
 //   console.log(i, "tree");
 // }
 
+/*
 // Object  - Arrays [ordered] and Objects {}
 
 // Arrays
@@ -1055,3 +1056,195 @@ console.log(fruit[2]);
 // let lastIndex = arrayOfNums.length - 1;
 // // console.log(lastIndex);
 // console.log(arrayOfNums[lastIndex]);
+*/
+
+// Common Array Methods
+
+// Create Array of Countries
+// Array of string
+const countries = ["Finland", "Denmark", "Sweden", "Norway", "Iceland"];
+console.log(countries);
+console.log(countries[3]);
+
+// Array of mixed data types
+const arr = [
+  "Martins", // string
+  25, // number
+  true, // boolean
+  { county: "Finland", city: "Helsinki" }, // obj
+  ["HTML", "CSS", "JS", "REACT"], // array
+];
+console.log(arr);
+console.log(arr[3]);
+console.log(arr[4]);
+console.log(arr[4][2]); // JS
+
+// 1. Adding Items into an Array
+// .push() & .unshift()
+const nums = [1, 2, 3];
+// console.log(nums);
+
+nums.push(4);
+// console.log(nums);
+
+nums.push(5, 6);
+// console.log(nums);
+
+nums.unshift(0);
+// console.log(nums);
+
+nums.unshift("to begin");
+console.log(nums);
+
+// 2. Removing Items from an Array
+// .pop() & .shift()
+
+// nums.pop();
+// console.log(nums);
+
+// nums.pop();
+// console.log(nums);
+
+// nums.shift();
+// console.log(nums);
+
+// nums.shift();
+// console.log(nums);
+
+// 3. Reversing an Array
+// nums.reverse();
+// console.log(nums);
+
+// nums.reverse();
+// console.log(nums);
+
+// 4. concatenating Array
+// const firstList = [1, 2, 3];
+// const secondList = [4, 5, 6];
+
+// console.log(firstList);
+// console.log(secondList);
+
+// const thirdList = firstList.concat(secondList);
+// const fourthList = secondList.concat(firstList);
+// console.log(thirdList);
+// console.log(fourthList);
+
+// 5. Searching for Items in an Array
+// .indexOf()
+// console.log(nums.indexOf("to begin"));
+// console.log(nums.indexOf(2));
+// console.log(nums.indexOf("array"));
+// console.log(nums.indexOf("10"));
+
+// if (nums.indexOf(2) === -1) {
+//   console.log("value does not exist");
+// } else {
+//   console.log("Value exists");
+// }
+
+// // Using a Ternary Operator
+// nums.indexOf(2) === -1
+//   ? console.log("value does not exist")
+//   : console.log("Value exists");
+
+// 6. Joining Items in an Array
+// .join()
+// const names = ["Martins", "Samuel", "Abdul", "Brook"];
+// console.log(names);
+
+// const namesString = names.join();
+// console.log(namesString);
+
+// console.log(names.join(" "));
+// console.log(names.join(", "));
+// console.log(names.join(" # "));
+
+// 7. Changing a string to an Array
+// .split()
+let js = "javascript";
+console.log(js);
+let jsCap = js.toUpperCase();
+console.log(jsCap);
+
+let jsCapArr = jsCap.split(); // ['JAVASCRIPT']
+// console.log(jsCapArr);
+
+// console.log(jsCap.split("")); // ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T']
+
+let companiesString = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+// console.log(companiesString.split());
+// console.log(companiesString.split(" "));
+
+const companiesStringArr = companiesString.split(", ");
+// console.log(companiesStringArr);
+
+// // 8. Slicing an Array
+// // .slice()
+// const companiesStringArrNew = companiesStringArr.slice();
+// console.log(companiesStringArrNew);
+
+// const companiesArrCut = companiesStringArrNew.slice(1, 3);
+// console.log(companiesArrCut);
+
+// For loop with an Array
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+numbers[7];
+
+for (let i = 0; i <= 10; i++) {
+  console.log(numbers[i]);
+}
+
+for (let i = 0; i <= 10; i++) {
+  console.log(companiesStringArr[i]);
+}
+
+// Exercises: Level 1
+// const countries = [
+//   'Albania',
+//   'Bolivia',
+//   'Canada',
+//   'Denmark',
+//   'Ethiopia',
+//   'Finland',
+//   'Germany',
+//   'Hungary',
+//   'Ireland',
+//   'Japan',
+//   'Kenya'
+// ]
+
+// const webTechs = [
+//   'HTML',
+//   'CSS',
+//   'JavaScript',
+//   'React',
+//   'Redux',
+//   'Node',
+//   'MongoDB'
+// ]
+
+// const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+// Iterate 0 to 10 using for loop, do the same using while and do while loop
+// Iterate 10 to 0 using for loop, do the same using while and do while loop
+// Iterate 0 to n using for loop
+// Write a loop that makes the following pattern using console.log():
+//     #
+//     ##
+//     ###
+//     ####
+//     #####
+//     ######
+//     #######
+// Use loop to print the following pattern:
+// 0 x 0 = 0
+// 1 x 1 = 1
+// 2 x 2 = 4
+// 3 x 3 = 9
+// 4 x 4 = 16
+// 5 x 5 = 25
+// 6 x 6 = 36
+// 7 x 7 = 49
+// 8 x 8 = 64
+// 9 x 9 = 81
+// 10 x 10 = 100
