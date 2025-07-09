@@ -1058,6 +1058,7 @@ console.log(fruit[2]);
 // console.log(arrayOfNums[lastIndex]);
 */
 
+/*
 // Common Array Methods
 
 // Create Array of Countries
@@ -1248,3 +1249,171 @@ for (let i = 0; i <= 10; i++) {
 // 8 x 8 = 64
 // 9 x 9 = 81
 // 10 x 10 = 100
+
+*/
+
+// For loop with an Array
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// numbers[7];
+
+// for (let i = 0; i <= numbers.length - 1; i++) {
+//   console.log(numbers[i]);
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log(companiesStringArr[i]);
+// }
+
+// const names = ["Martins", "Samuel", "Abdul", "Brook"];
+
+// console.log(names.length); // 4
+// for (let i = 0; i <= names.length - 1; i++) {
+//   console.log(names[i]);
+// }
+
+// sum of all items in an array
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// let sum = 0; // 1, 3, 6, 10
+// // console.log(sum);
+
+// for (let i = 0; i <= numbers.length - 1; i++) {
+//   sum = sum + numbers[i];
+//   // console.log(sum);
+// }
+// console.log(sum); //  28
+
+// const numbers = [1, 2, 3, 4, 5];
+// let newArr = [];
+// let mulNum = 0;
+
+// for (let i = 0; i <= numbers.length - 1; i++) {
+//   mulNum = numbers[i] * numbers[i];
+//   newArr.push(mulNum);
+//   console.log(newArr);
+// }
+
+const countries = ["Finland", "Sweden", "Denmark", "Norway", "Iceland"];
+
+// let newArCountries = [];
+// // let strCou = "";
+
+// for (let i = 0; i <= countries.length - 1; i++) {
+//   // strCou = countries[i].toUpperCase();
+//   // newArCountries.push(strCou);
+
+//   newArCountries.push(countries[i].toUpperCase());
+// }
+// console.log(newArCountries.reverse());
+
+// for (let i = 0; i <= countries.length - 1; i++) {
+//   console.log(countries[i]);
+// }
+
+// for-of-loop
+
+// for (let country of countries) {
+//   console.log(country);
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// for (num of numbers) {
+//   console.log(num);
+// }
+
+// const courseName = "JAVASCRIPT";
+// for (letter of courseName) {
+//   console.log(letter);
+// }
+
+const numbers = [5, 2, 30, 4, 50, 62, 7];
+let sum = 0; // 1, 3, 6, 10
+// console.log(sum);
+
+for (let num of numbers) {
+  sum = sum + num;
+}
+console.log(sum);
+
+// for (let num of numbers) {
+//   sum = sum + num;
+// }
+// console.log(sum);
+
+// for (let i = 0; i <= numbers.length - 1; i++) {
+//   sum = sum + numbers[i];
+//   // console.log(sum);
+// }
+// console.log(sum); //  28
+
+// Objects
+
+const person1 = {
+  name: "Alice", // key-name & value-"Alice"
+  age: 25,
+  isStudent: true,
+};
+
+// console.log(person1);
+// console.log(person1.name);
+// console.log(person1.age);
+
+// person1.location = "Lagos";
+// console.log(person1.location);
+
+// const arrayOfData = [
+//   {
+//     name: "Alice",
+//     age: 25,
+//     isStudent: true,
+//   },
+//   {
+//     name: "Moh",
+//     age: 20,
+//     isStudent: true,
+//   },
+//   {
+//     name: "Jeff",
+//     age: 35,
+//     isStudent: true,
+//   },
+// ];
+
+const person2 = {
+  firstName: "Mark",
+  lastName: "Abel",
+  "parents name": "Biodun",
+  age: 20,
+  isMarried: false,
+  country: "Nigeria",
+  skills: ["HTML", "CSS", "JS"],
+  address: {
+    city: "Lagos",
+    street: "Owo",
+    zipcode: 10001,
+  },
+};
+
+console.log(person2.firstName);
+console.log(person2.lastName);
+console.log(person2.age);
+console.log(person2.skills);
+console.log(person2.skills[1]);
+console.log(person2.skills[2]);
+console.log(person2.address);
+console.log(person2.address.street);
+
+person2.age = 21;
+console.log(person2.age);
+console.log(person2);
+
+person2.title = "student";
+
+// Bracket Notation
+console.log(person2.firstName);
+console.log(person2["firstName"]);
+
+console.log(person2["parents name"]);
+
+console.log("I fhfbhf hgfsduyadsjfbdshyfsd hbudfhsc hbdf");
+
+const anythig = "I fhfbhf hgfsduyadsjfbdshyfsd hbudfhsc hbdf";
