@@ -1252,6 +1252,7 @@ for (let i = 0; i <= 10; i++) {
 
 */
 
+/*
 // For loop with an Array
 // const numbers = [1, 2, 3, 4, 5, 6, 7];
 // numbers[7];
@@ -1414,6 +1415,146 @@ console.log(person2["firstName"]);
 
 console.log(person2["parents name"]);
 
-console.log("I fhfbhf hgfsduyadsjfbdshyfsd hbudfhsc hbdf");
+*/
+// Functions
 
-const anythig = "I fhfbhf hgfsduyadsjfbdshyfsd hbudfhsc hbdf";
+function myLog() {
+  console.log("I fhfbhf hgfsduyadsjfbdshyfsd hbudfhsc hbdf");
+}
+myLog();
+
+// const anythig = "I fhfbhf hgfsduyadsjfbdshyfsd hbudfhsc hbdf";
+
+// alert();
+// prompt();
+// console.log("FUnction");
+
+// console object
+
+// function greet() {
+//   console.log("Hello and Welcome to Class Today");
+// }
+// greet();
+
+// Return Values
+
+// function addTwoNumbers() {
+//   // console.log("Anything"); /// this level
+//   let a = 3;
+//   let b = 5;
+
+//   let total = a + b;
+//   return total;
+// }
+// // addTwoNumbers();
+// console.log(addTwoNumbers());
+
+// function greet() {
+//   let grt = "Hello and Welcome to Class Today";
+//   return grt;
+// }
+// console.log(greet());
+
+// Function Declaration
+// function greet() {
+//   return "Hello, Welcome";
+// }
+// console.log(greet());
+
+// Function Expression
+// const sayHi = function () {
+//   return "Hi there";
+// };
+// console.log(sayHi());
+
+// const greet = function () {
+//   console.log("Hello and Welcome to Class Today");
+// };
+// greet();
+
+// Arrow functions
+// () => {};
+
+// const greet2 = () => {
+//   // console.log("Here");
+//   return "Hello, You are welcome";
+// };
+// console.log(greet2());
+
+// const arrowFunc = () => {
+//   console.log("This is an arrow function");
+// };
+// arrowFunc();
+// console.log(arrowFunc());
+
+// Anonymous functions  self invoke function (IIEF)
+// (function() {})
+// (function () {
+//   console.log("This is an anonymous function");
+// })();
+
+// Function without Parameter
+// A function which makes a number square
+function square() {
+  let num = 12;
+  let sqr = num * num;
+  return sqr;
+}
+console.log(square());
+
+// A function which prints out a person’s full name
+// function printFullName() {
+//   let firstName = "Tobi";
+//   let lastName = "Tope";
+//   let fullName = firstName + " " + lastName;
+//   // let fullName = `${firstName} ${lastName}`;
+//   return fullName;
+// }
+// console.log(printFullName());
+
+// // Function with Parameter
+// function greetUser(name) {
+//   // parameter
+//   return `Hello, ${name}`;
+// }
+// console.log(greetUser("Alabi")); // arguments
+
+// // refactoring
+// function square(num) {
+//   let sqr = num * num;
+//   return sqr;
+// }
+// console.log(square(70));
+// console.log(square(20));
+// console.log(greetUser("Vic"));
+// console.log(square(1000));
+
+// console.log(greetUser("Amoto"));
+// console.log(greetUser("John"));
+
+// Area of a Circle
+// Math functions......
+// Math.random()
+// Math.PI
+// Math.ceil()
+// Math.trunc()
+// Math.floor()
+
+function areaOfCircle(r) {
+  // PI * r * r
+  // r ** 2  === r * r
+  // console.log(Math.PI);
+  // let result = Math.PI * r * r;
+  let result = Math.PI * r ** 2;
+  return Math.ceil(result);
+}
+console.log(areaOfCircle(2));
+console.log(areaOfCircle(3));
+console.log(areaOfCircle(4));
+
+// Functions with more parameters and an array
+function printFullName(firstName, lastName, age) {
+  let fullName = `${lastName} ${firstName}`;
+  return fullName;
+}
+console.log(printFullName("Tope", "Alabi"));
