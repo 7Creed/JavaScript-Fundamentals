@@ -1008,6 +1008,7 @@ for (let i = 0; i <= 5; i = i + 2) {
 
 // Arrays
 
+
 let fruit1 = "apple";
 let fruit2 = "banana";
 let fruit3 = "orange";
@@ -1416,6 +1417,8 @@ console.log(person2["firstName"]);
 console.log(person2["parents name"]);
 
 */
+
+/*
 // Functions
 
 function myLog() {
@@ -1558,3 +1561,127 @@ function printFullName(firstName, lastName, age) {
   return fullName;
 }
 console.log(printFullName("Tope", "Alabi"));
+*/
+
+// Function that sums all items of an array
+// const numbers = [1, 2, 3, 4, 5];
+
+// function sumOfArray(array) {
+//   let sum = 0;
+//   for (let i = 0; i <= array.length - 1; i++) {
+//     sum = sum + array[i];
+//   }
+//   // console.log(sum);
+//   return sum;
+// }
+// console.log(sumOfArray(numbers)); // 15
+// console.log(sumOfArray([2, 4, 5, 6, 7, 8, 9, 90]));
+
+// // functions with default parameters
+// function printFullName(firstName, lastName, age = 20) {
+//   let fullName = `I am ${lastName} ${firstName} and I am ${age} years old`;
+//   return fullName;
+// }
+// console.log(printFullName("Tope", "Alabi", 35));
+
+// function greetUser(name = "User") {
+//   console.log("Hello,  " + name + ". Welcome to today’s class");
+// }
+// greetUser("Tope");
+
+// function calcBirthAge(birthYear, currentYear = 2025) {
+//   let age = currentYear - birthYear;
+//   return age;
+// }
+// console.log(calcBirthAge(2000));
+
+// Scope and Hoisting
+
+// Global Scope
+// let globalScope = "I am global";
+
+// const sum = 90 + 70;
+// console.log(sum);
+// console.log(globalScope);
+
+// function showGlobal() {
+//   console.log(globalScope);
+// }
+// showGlobal();
+
+// Local Scope
+// let sum = 0;
+// function showGlobal() {
+//   sum = 90 + 70;
+//   console.log(sum);
+// }
+// console.log(sum);
+// showGlobal();
+
+// function myFunction() {
+//   let localVar = "I'm local";
+//   console.log(localVar);
+// }
+// myFunction();
+
+// console.log(localVar);
+
+// Hoisting
+// let globalScope = "I am global";
+// console.log(globalScope);
+
+// const global = "I am global";
+// console.log(globalScope);
+
+// Example
+// Greet Based on Time
+// function greetUser(name, hr) {
+//   if (hr >= 6 && hr < 12) {
+//     return `Good morning ${name}`;
+//   } else if (hr >= 12 && hr < 17) {
+//     return `Good afternoon ${name}`;
+//   } else if (hr >= 17 && hr < 24) {
+//     return `Good evening ${name}`;
+//   } else {
+//     return "";
+//   }
+// }
+// console.log(greetUser("Karl", 23));
+
+// function greetUser(hour) {
+//   if (hour < 12) {
+//     return "Good morning!";
+//   } else if (hour < 18) {
+//     return "Good afternoon!";
+//   } else {
+//     return "Good evening!";
+//   }
+// }
+// console.log(greetUser(10));
+
+// closure
+
+// const day = now.getDay();
+// console.log(day);
+
+// const month = now.getMonth();
+// console.log(month);
+// console.log(new Date("2020-03-09"));
+
+// function greetByTime(name) {
+//   const now = new Date();
+//   // console.log(now);
+//   const hour = now.getHours();
+//   // console.log(hour);
+
+//   if (hour >= 6 && hour < 12) {
+//     return `Good morning ${name}`;
+//   } else if (hour >= 12 && hour < 17) {
+//     return `Good afternoon ${name}`;
+//   } else if (hour >= 17 && hour < 24) {
+//     return `Good evening ${name}`;
+//   } else {
+//     return "It is midnight";
+//   }
+// }
+// console.log(greetByTime("Bisi"));
