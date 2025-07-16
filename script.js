@@ -1685,3 +1685,34 @@ console.log(printFullName("Tope", "Alabi"));
 //   }
 // }
 // console.log(greetByTime("Bisi"));
+
+// DOM - Document Object Model
+
+// DOM Element Selectors
+// .getElementsByTagName()
+// const header = document.getElementsByTagName("h1");
+// console.log(header);
+// console.log(header[0]);
+
+// // .getElementById()
+// const title = document.getElementById("first-title");
+// console.log(title);
+// console.log(document.getElementById("second-title"));
+
+// // .getElementByClassName()
+// const titles = document.getElementsByClassName("title");
+// console.log(titles[2]);
+
+// // .querySelector()
+// const intro = document.querySelector(".intro");
+// console.log(intro);
+
+// const titleHead = document.querySelector(".title");
+// console.log(titleHead);
+
+// console.log(document.querySelector("#second-title"));
+
+// console.log(document.querySelector("p"));
+
+// .querySelectorAll()
+// console.log(document.querySelectorAll("#second-title")[0]);
