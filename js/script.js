@@ -1563,6 +1563,7 @@ function printFullName(firstName, lastName, age) {
 console.log(printFullName("Tope", "Alabi"));
 */
 
+/*
 // Function that sums all items of an array
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -1716,3 +1717,63 @@ console.log(printFullName("Tope", "Alabi"));
 
 // .querySelectorAll()
 // console.log(document.querySelectorAll("#second-title")[0]);
+*/
+
+// Add, Remove and Changing Attributes
+
+// Adding & Removing
+// console.log();
+// const paraText = document.querySelector(".intro");
+// paraText.classList.add("red");
+// paraText.classList.remove("intro");
+
+// console.log(paraText);
+
+let imageTag = document.querySelector("img");
+console.log(imageTag);
+
+// Changing
+// imageTag.src =
+//   "https://img.freepik.com/premium-photo/medium-shot-family-retro-style_52683-115524.jpg";
+
+// imageTag.alt = "A pic of mother and child";
+// console.log(imageTag);
+
+// setAttribute
+// imageTag.setAttribute(
+//   "src",
+//   "https://img.freepik.com/premium-photo/medium-shot-family-retro-style_52683-115524.jpg"
+// );
+
+// imageTag.setAttribute("id", "image");
+// console.log(imageTag);
+
+// Changing Text and HTML
+// TextContent
+// InnerText
+
+// InnerHTML
+
+const paraText = document.querySelector(".intro");
+// paraText.classList.add("red");
+// paraText.classList.remove("intro");
+
+console.log(paraText);
+
+console.log(paraText.textContent);
+console.log(paraText.innerText);
+console.log(paraText.innerHTML);
+
+paraText.textContent = `This is an interesting DOM`;
+// paraText.innerText = `This is an interesting DOM`;
+
+// paraText.innerHTML = `<h3>Basic JavaScript</h3>`;
+
+// Adding styles
+const myDiv = document.getElementById("myDiv");
+myDiv.innerHTML = `<h3>Basic JavaScript</h3>`;
+console.log(myDiv);
+
+myDiv.style.color = "red";
+myDiv.style.backgroundColor = "blue";
+myDiv.style.fontSize = "30px";

@@ -1,0 +1,9 @@
+.red {
+  color: #ff0000;
+  background-color: black;
+}
+
+.listItems {
+  font-size: 18px;
+  color: gray;
+}
