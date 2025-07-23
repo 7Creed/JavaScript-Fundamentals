@@ -93,3 +93,76 @@ const toggleMessage = function () {
     note.textContent = "Click the button";
   }
 };
+
+//////
+// let greetBtn = document.querySelector(".greenBtn");
+// console.log(greetBtn);
+
+// greetBtn.addEventListener("mouseover", function () {
+//   alert("Good PM Everyone!");
+
+//   let para = document.createElement("p");
+//   console.log(para);
+
+//   para.textContent = "Button was clicked!";
+
+//   document.body.append(para);
+// });
+
+// Light and Dark Mode
+// Assignment
+let toogleBtn = document.querySelector(".night-mode");
+console.log(toogleBtn);
+
+// toogleBtn.addEventListener("click", function () {
+//   let body = document.body;
+
+//   if (
+//     body.classList.contains("light-mode") ||
+//     body.classList.contains("blue-mode")
+//   ) {
+//     body.classList.remove("light-mode");
+//     body.classList.remove("blue-mode");
+//     body.classList.add("dark-mode");
+//   } else if (
+//     body.classList.contains("dark-mode") ||
+//     body.classList.contains("blue-mode")
+//   ) {
+//     body.classList.remove("dark-mode");
+//     body.classList.remove("blue-mode");
+//     body.classList.add("light-mode");
+//   } else {
+//     body.classList.remove("light-mode");
+//     body.classList.remove("dark-mode");
+//     body.classList.add("blue-mode");
+//   }
+// });
+
+// .toogle
+toogleBtn.addEventListener("click", function (e) {
+  console.log(e.target);
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+});
+
+// const frm = document.querySelector("#myForm");
+
+// document.querySelector("#myForm").addEventListener("submit", function (e) {
+//   e.preventDefault();
+
+//   console.log("My form has been submitted");
+// });
+
+const frm = document.querySelector("#myForm");
+const nameInput = document.querySelector("#nameInput");
+const messagePara = document.querySelector("#message");
+
+frm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const textMessage = nameInput.value;
+  // console.log(nameInput.value);
+  messagePara.textContent = textMessage; // Inputted the text message inside the paragraph
+
+  nameInput.value = ""; // resetting the input to empty
+});

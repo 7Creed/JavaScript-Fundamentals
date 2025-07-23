@@ -1774,6 +1774,6 @@ const myDiv = document.getElementById("myDiv");
 myDiv.innerHTML = `<h3>Basic JavaScript</h3>`;
 console.log(myDiv);
 
-myDiv.style.color = "red";
-myDiv.style.backgroundColor = "blue";
-myDiv.style.fontSize = "30px";
+// myDiv.style.color = "red";
+// myDiv.style.backgroundColor = "blue";
+// myDiv.style.fontSize = "30px";

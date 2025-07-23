@@ -7,3 +7,51 @@
   font-size: 18px;
   color: gray;
 }
+
+.wrapper {
+  display: grid;
+  place-content: center;
+}
+
+.contanier {
+  text-align: center;
+}
+
+button {
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.greenBtn {
+  background-color: #008000;
+  color: #fff;
+}
+
+/* toggle Dark Mode */
+.night-mode {
+  place-self: end;
+  width: 20%;
+  cursor: pointer;
+}
+
+.night-mode svg {
+  width: 100%;
+}
+
+/* body {
+  
+} */
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.blue-mode {
+  background-color: #100995;
+}
