@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Rabiu",
+    "age": 20,
+    "hobby": "football"
+  },
+  {
+    "id": 2,
+    "name": "Taiwo",
+    "age": 22,
+    "hobby": "Music"
+  },
+  {
+    "id": 3,
+    "name": "Moses",
+    "age": 25,
+    "hobby": "reading"
+  },
+  {
+    "id": 4,
+    "name": "Ezekiel",
+    "age": 28,
+    "hobby": "football"
+  },
+  {
+    "id": 5,
+    "name": "Irene",
+    "age": 30,
+    "hobby": "Sleeping"
+  },
+  {
+    "id": 6,
+    "name": "Karima",
+    "age": 32,
+    "hobby": "Food"
+  },
+  {
+    "id": 7,
+    "name": "Kansola",
+    "age": 35,
+    "hobby": "React"
+  }
+]

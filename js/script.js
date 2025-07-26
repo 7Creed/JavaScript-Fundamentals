@@ -1719,6 +1719,7 @@ console.log(printFullName("Tope", "Alabi"));
 // console.log(document.querySelectorAll("#second-title")[0]);
 */
 
+/*
 // Add, Remove and Changing Attributes
 
 // Adding & Removing
@@ -1777,3 +1778,149 @@ console.log(myDiv);
 // myDiv.style.color = "red";
 // myDiv.style.backgroundColor = "blue";
 // myDiv.style.fontSize = "30px";
+*/
+
+// Fetch API
+
+// HTTP Request: GET, POST, PUT / PATCH, DELETE
+
+// Basic Syntax
+// fetch(URL, { options })
+//   .then(function (response) {}) // response
+//   .then(function (data) {})
+//   .catch(function (error) {}); // error
+
+// GET
+const url = "https://jsonplaceholder.typicode.com/posts/1";
+// fetch(url)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//   })
+//   .catch(function (error) {
+//     console.error("error");
+//   });
+
+// // POST
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     title: "My Post",
+//     message: "This is the meassage",
+//     userID: "1",
+//     useName: "Idowu",
+//   }),
+// })
+//   .then(function (response) {
+//     console.log(response);
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//   });
+
+//////////////////
+// GET
+// fetch(url)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//   })
+//   .catch(function (error) {
+//     console.error("error");
+//   });
+
+// console.log("Anything 1");
+// console.log("Anything 2");
+// console.log("Anything 3");
+// console.log("Anything 4");
+
+// // skip
+// async function print() {
+//   const data = await "Anything 6";
+//   console.log(data);
+// }
+// print();
+
+// console.log("Anything 5");
+
+// async function getPosts() {
+//   try {
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     console.log(data);
+//   } catch {}
+// }
+// getPosts();
+
+// async function getAdvice() {
+//   try {
+//     const response = await fetch("https://api.adviceslip.com/advice");
+//     const data = await response.json();
+//     console.log(data);
+//   } catch {}
+// }
+// getAdvice();
+
+// const listItems = document.querySelector(".lists");
+
+// async function getPosts() {
+//   try {
+//     const response = await fetch(url);
+//     const data = await response.json();
+
+//     listItems.innerHTML = `${data.body}`;
+
+//     console.log(data.body);
+//   } catch {}
+// }
+// getPosts();
+
+// const dogBtn = document.querySelector("#dogBtn");
+// const dogImg = document.querySelector(".dogImg");
+// // console.log(dogImg);
+
+// const DOGURL = "https://dog.ceo/api/breeds/image/random";
+// async function changeDogImage() {
+//   try {
+//     const response = await fetch(DOGURL);
+//     const data = await response.json();
+//     // console.log(data);
+
+//     dogImg.setAttribute("src", data.message);
+//   } catch {}
+// }
+
+// dogBtn.addEventListener("click", function () {
+//   changeDogImage();
+// });
+
+const nme = document.querySelector(".nme");
+const age = document.querySelector(".age");
+const hobby = document.querySelector(".hobby");
+
+const btn = document.querySelector("#btn");
+
+async function getData() {
+  try {
+    const response = await fetch("data.json");
+
+    const data = await response.json();
+    console.log(data);
+
+    nme.textContent = data[0].name;
+    age.textContent = data[0].age;
+    hobby.textContent = data[0].hobby;
+  } catch {}
+}
+
+btn.addEventListener("click", function () {
+  getData();
+});
